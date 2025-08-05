@@ -12,22 +12,18 @@
       box-sizing: border-box;
       font-family: 'Fira Code', monospace;
     }
-
     body {
       background-color: #0a192f;
       color: #ccd6f6;
       padding: 2rem;
     }
-
     h1, h2, h3 {
       color: #64ffda;
       margin-bottom: 1rem;
     }
-
     section {
       margin-bottom: 3rem;
     }
-
     .skills-icons-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -35,60 +31,64 @@
       justify-items: center;
       padding: 1rem 0;
     }
-
     .skill-icon {
       text-align: center;
     }
-
     .skill-icon img {
       width: 48px;
       height: 48px;
       margin-bottom: 0.5rem;
       transition: transform 0.3s ease;
     }
-
     .skill-icon img:hover {
       transform: scale(1.1);
     }
-
     .skill-icon p {
       margin: 0;
       font-size: 0.9rem;
       color: #ccd6f6;
     }
-
     .project-card {
       background-color: #112240;
       padding: 1rem;
       border-radius: 10px;
       margin-bottom: 1rem;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     }
-
     .project-card h3 {
       margin-bottom: 0.5rem;
       color: #fff;
     }
-
     .project-card p {
       margin: 0.25rem 0;
     }
-
     a {
       color: #64ffda;
       text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
     }
-
     ul {
       padding-left: 1.2rem;
     }
-
     ul li {
       margin-bottom: 0.5rem;
+    }
+    /* Button styling for Live Preview */
+    .live-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 14px;
+      background-color: #64ffda;
+      color: #0a192f;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .live-button:hover {
+      background-color: #52e0c4;
     }
   </style>
 </head>
@@ -101,62 +101,41 @@
 
   <section>
     <h2>About Me</h2>
-    <p>Experienced developer with a strong background in website development, SEO, and automation testing. I build efficient, scalable solutions and have contributed to over 15 successful projects across various industries.</p>
+    <p>Experienced developer with a strong background in website development, SEO, and automation testing. I build efficient, scalable solutions and have contributed to over 20+ successful projects across various industries.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><strong>2011</strong> – B.E in Electronics and Communication Engineering,<br>Trichy Engineering College, Trichy.</p>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li>CCNA Routing & Switching</li>
+      <li>CCNA Voice</li>
+      <li>CCNA Video</li>
+      <li>VMware Certified Associate – Data Center Virtualization</li>
+      <li>Advanced Collaboration Architecture Sales Specialist</li>
+      <li>Toastmasters International – Competent Communication (CC)</li>
+    </ul>
   </section>
 
   <section>
     <h2>Technical Skills</h2>
     <div class="skills-icons-grid">
-
-      <div class="skill-icon">
-        <img src="https://raw.githubusercontent.com/maruthais/portfolio/main/HTML.png" alt="HTML5" title="HTML5">
-        <p>HTML5</p>
-      </div>
-      <div class="skill-icon">
-        <img src="https://raw.githubusercontent.com/maruthais/portfolio/main/CSS3.png" alt="CSS3" title="CSS3">
-        <p>CSS3</p>
-      </div>
-      <div class="skill-icon">
-        <img src="https://raw.githubusercontent.com/maruthais/portfolio/main/JS.png" alt="JavaScript" title="JavaScript">
-        <p>JavaScript</p>
-      </div>
-      <div class="skill-icon">
-        <img src="https://raw.githubusercontent.com/maruthais/portfolio/main/React Js.png" alt="ReactJS" title="ReactJS">
-        <p>ReactJS</p>
-      </div>
-      <div class="skill-icon">
-        <img src="https://raw.githubusercontent.com/maruthais/portfolio/main/PHP.png" alt="PHP" title="PHP">
-        <p>PHP</p>
-      </div>
-      <div class="skill-icon">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" alt="CodeIgniter" title="CodeIgniter">
-        <p>CodeIgniter</p>
-      </div>
-      <div class="skill-icon">
-        <img src="https://raw.githubusercontent.com/maruthais/portfolio/main/Mysql.png" alt="MySQL" title="MySQL">
-        <p>Database: MySQL, SQL</p>
-      </div>
-      <div class="skill-icon">
-        <img src="https://raw.githubusercontent.com/maruthais/portfolio/main/Shopify.png" alt="Shopify" title="Shopify">
-        <p>Shopify</p>
-      </div>
-      <div class="skill-icon">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress" title="WordPress">
-        <p>WordPress</p>
-      </div>
-      <div class="skill-icon">
-        <img src="https://raw.githubusercontent.com/maruthais/portfolio/main/API.png" alt="REST API" title="REST API">
-        <p>API: REST & SOAP</p>
-      </div>
-      <div class="skill-icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/3144/3144442.png" alt="Agile" title="Agile">
-        <p>Agile</p>
-      </div>
-      <div class="skill-icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Waterfall" title="Waterfall">
-        <p>Waterfall</p>
-      </div>
-
+      <div class="skill-icon"><img src="https://raw.githubusercontent.com/maruthais/portfolio/main/HTML.png" alt="HTML5"><p>HTML5</p></div>
+      <div class="skill-icon"><img src="https://raw.githubusercontent.com/maruthais/portfolio/main/CSS3.png" alt="CSS3"><p>CSS3</p></div>
+      <div class="skill-icon"><img src="https://raw.githubusercontent.com/maruthais/portfolio/main/JS.png" alt="JavaScript"><p>JavaScript</p></div>
+      <div class="skill-icon"><img src="https://raw.githubusercontent.com/maruthais/portfolio/main/React Js.png" alt="ReactJS"><p>ReactJS</p></div>
+      <div class="skill-icon"><img src="https://raw.githubusercontent.com/maruthais/portfolio/main/PHP.png" alt="PHP"><p>PHP</p></div>
+      <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" alt="CodeIgniter"><p>CodeIgniter</p></div>
+      <div class="skill-icon"><img src="https://raw.githubusercontent.com/maruthais/portfolio/main/Mysql.png" alt="MySQL"><p>Database:MySQL,SQL</p></div>
+      <div class="skill-icon"><img src="https://raw.githubusercontent.com/maruthais/portfolio/main/Shopify.png" alt="Shopify"><p>Shopify</p></div>
+      <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress"><p>WordPress</p></div>
+      <div class="skill-icon"><img src="https://raw.githubusercontent.com/maruthais/portfolio/main/API.png" alt="REST API"><p>API: REST & SOAP</p></div>
+      <div class="skill-icon"><img src="https://cdn-icons-png.flaticon.com/512/3144/3144442.png" alt="Agile"><p>Agile</p></div>
+      <div class="skill-icon"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Waterfall"><p>Waterfall</p></div>
     </div>
   </section>
 
@@ -164,92 +143,78 @@
     <h2>Projects</h2>
 
     <div class="project-card">
-      <h3>Cisco</h3>
-      <p><strong>Role:</strong> Manual & Automation Testing</p>
-      <p><strong>Tech:</strong> Ruby (Watir WebDriver), Selenium, Python</p>
+      <h3>Cisco – Product System Testing</h3>
+      <p><strong>Requirement:</strong> Automate feature testing for Cisco VoIP products using various tools.</p>
+      <p><strong>Scope:</strong> Manual and automation testing using Ruby (Watir WebDriver) and Python for feature verification.</p>
+      <p><strong>Technologies Used:</strong> Ruby, Python, Selenium, VoIP Tools</p>
+      <a href="https://www.cisco.com/" target="_blank" class="live-button">Live Preview</a>
     </div>
 
     <div class="project-card">
-      <h3>Xerox</h3>
-      <p><strong>Role:</strong> Manual & Automation Testing</p>
-      <p><strong>Tech:</strong> Java, Selenium</p>
+      <h3>Xerox Ecommerce Portal Testing</h3>
+      <p><strong>Requirement:</strong> Ensure product functions like printing and scanning work on mobile & desktop apps.</p>
+      <p><strong>Scope:</strong> Manual and automation testing for web and mobile platforms using Java and Selenium.</p>
+      <p><strong>Technologies Used:</strong> Java, Selenium, Mobile App Testing, Web Portal Testing</p>
+      <a href="https://www.xerox.com/" target="_blank" class="live-button">Live Preview</a>
     </div>
 
     <div class="project-card">
-      <h3>Healurheart</h3>
-      <p><strong>Role:</strong> Manual & Automation Testing</p>
-      <p><strong>Tech:</strong> Java, Selenium</p>
+      <h3>Hospital Appointment System</h3>
+      <p><strong>Requirement:</strong> Create an online appointment booking system with admin and patient dashboards.</p>
+      <p><strong>Scope:</strong> Built custom PHP backend, integrated calendar and SMS notification.</p>
+      <p><strong>Technologies Used:</strong> Core PHP, MySQL, jQuery, Bootstrap</p>
+      <a href="https://www.healurheart.com" target="_blank" class="live-button">Live Preview</a>
     </div>
 
     <div class="project-card">
-      <h3>Vasomeditech</h3>
-      <p><strong>Role:</strong> Manual & Automation Testing</p>
-      <p><strong>Tech:</strong> Java, Selenium</p>
+      <h3>Vinayaga Shutters – Corporate Website</h3>
+      <p><strong>Requirement:</strong> Build a responsive business site with custom contact forms and SEO-friendly structure.</p>
+      <p><strong>Scope:</strong> Developed WordPress site with Elementor, implemented on-page SEO and Google Analytics.</p>
+      <p><strong>Technologies Used:</strong> WordPress, Elementor, HTML, CSS, Google Analytics</p>
+      <a href="https://vinayagashutters.com/" target="_blank" class="live-button">Live Preview</a>
     </div>
 
     <div class="project-card">
-      <h3>Pioneerecorp</h3>
-      <p><strong>Role:</strong> Web Development & QA</p>
-      <p><strong>Stack:</strong> WordPress, Custom PHP Forms, Hosting QA</p>
+      <h3>Mayukha Fabs – Fashion Ecommerce</h3>
+      <p><strong>Requirement:</strong> Develop a Shopify site with payment gateway and inventory tracking.</p>
+      <p><strong>Scope:</strong> Set up Shopify theme, integrated Razorpay, and managed product listings with SEO.</p>
+      <p><strong>Technologies Used:</strong> Shopify, Razorpay, Liquid, SEO Tools</p>
+      <a href="https://www.mayukhafabs.com/" target="_blank" class="live-button">Live Preview</a>
     </div>
 
     <div class="project-card">
-      <h3>Shaktiman</h3>
-      <p><strong>Role:</strong> Frontend & QA</p>
-      <p><strong>Stack:</strong> ReactJS, SEO Optimization</p>
+      <h3>Diesel Generator Rental & Sales Website</h3>
+      <p><strong>Requirement:</strong> Build a commercial site to showcase diesel generator rental and sales offerings.</p>
+      <p><strong>Scope:</strong> Developed the entire site, added product catalogue, contact form and inquiry modules.</p>
+      <p><strong>Technologies Used:</strong> WordPress, Elementor, PHP, MySQL</p>
+      <a href="http://pioneerindia.co.in" target="_blank" class="live-button">Live Preview</a>
+      <a href="https://shaktiman.co" target="_blank" class="live-button" style="margin-left: 10px;">Live Preview</a>
     </div>
 
     <div class="project-card">
-      <h3>Pioneer India</h3>
-      <p><strong>Role:</strong> Frontend & QA</p>
-      <p><strong>Stack:</strong> ReactJS, SEO Optimization</p>
+      <h3>Pioneer Ecorp – Digital Marketing</h3>
+      <p><strong>Requirement:</strong> Deliver SEO and digital marketing support to improve website traffic and ranking.</p>
+      <p><strong>Scope:</strong> Page speed optimization, keyword research, on-page SEO, technical audit, and content enhancement.</p>
+      <p><strong>Technologies Used:</strong> Google Analytics, Search Console, PageSpeed Insights, WordPress</p>
+      <a href="https://pioneerecorp.com" target="_blank" class="live-button">Live Preview</a>
     </div>
 
     <div class="project-card">
-      <h3>DMeal</h3>
-      <p><strong>Role:</strong> Frontend & QA</p>
-      <p><strong>Stack:</strong> ReactJS, SEO Optimization</p>
+      <h3>K2 Cranes – Corporate Website (India)</h3>
+      <p><strong>Requirement:</strong> Develop a dynamic corporate website to showcase crane products, industries served, and service offerings.</p>
+      <p><strong>Scope:</strong> Designed and developed a multilingual WordPress site using WPBakery, implemented SEO best practices, and integrated custom inquiry forms.</p>
+      <p><strong>Technologies Used:</strong> WordPress, WPBakery Page Builder, HTML, CSS, JavaScript, Google Analytics, Yoast SEO</p>
+      <a href="http://k2cranes.com/" target="_blank" class="live-button">Live Preview</a>
     </div>
 
     <div class="project-card">
-      <h3>Enzyme</h3>
-      <p><strong>Role:</strong> Frontend & QA</p>
-      <p><strong>Stack:</strong> ReactJS, SEO Optimization</p>
+      <h3>K2 Cranes – Corporate Website (UAE)</h3>
+      <p><strong>Requirement:</strong> Create a regional variant of the corporate site targeting UAE clients with optimized content and local SEO.</p>
+      <p><strong>Scope:</strong> Cloned and customized the existing K2 India site for the UAE market, updated content for regional relevance, and optimized performance and SEO.</p>
+      <p><strong>Technologies Used:</strong> WordPress, WPBakery Page Builder, HTML, CSS, Google Analytics, Yoast SEO</p>
+      <a href="http://k2cranes.ae/" target="_blank" class="live-button">Live Preview</a>
     </div>
 
-    <div class="project-card">
-      <h3>Ecomarvy</h3>
-      <p><strong>Role:</strong> Frontend & QA</p>
-      <p><strong>Stack:</strong> ReactJS, SEO Optimization</p>
-    </div>
-
-    <div class="project-card">
-      <h3>99minswash and dry</h3>
-      <p><strong>Role:</strong> Frontend & QA</p>
-      <p><strong>Stack:</strong> ReactJS, SEO Optimization</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Green and Grow India</h3>
-      <p><strong>Role:</strong> Frontend & QA</p>
-      <p><strong>Stack:</strong> ReactJS, SEO Optimization</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Mayukha</h3>
-      <p><strong>Role:</strong> Frontend & QA</p>
-      <p><strong>Stack:</strong> ReactJS, SEO Optimization</p>
-    </div>
-
-  </section>
-
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>Google Digital Garage – Fundamentals of Digital Marketing</li>
-      <li>HubSpot Academy – SEO Certification</li>
-      <li>Udemy – Complete Web Developer Bootcamp</li>
-    </ul>
   </section>
 
   <section>
