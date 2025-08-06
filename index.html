@@ -22,6 +22,32 @@
       margin-bottom: 2rem;
       text-align: center;
     }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .profile-photo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #64ffda;
+    }
+    .header-text {
+      text-align: left;
+    }
+    /* Responsive for small screens */
+    @media (max-width: 480px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      .header-text {
+        text-align: center;
+      }
+    }
     h1, h2, h3 {
       color: #64ffda;
       margin-bottom: 1rem;
@@ -117,8 +143,13 @@
 <body>
 
   <header>
-    <h1>Maruthai Sangapillai</h1>
-    <p>Senior Web Developer | QA | SEO | Digital Marketing</p>
+    <div class="header-content">
+      <img src="https://raw.githubusercontent.com/maruthais/portfolio/main/profile-photo.jpg" alt="Maruthai Sangapillai" class="profile-photo" />
+      <div class="header-text">
+        <h1>Maruthai Sangapillai</h1>
+        <p>Senior Web Developer | QA | SEO | Digital Marketing</p>
+      </div>
+    </div>
   </header>
 
   <section>
@@ -197,7 +228,7 @@
     </div>
   </section>
 
-  <section>
+ <section>
     <h2>Projects</h2>
 
     <div class="project-card">
@@ -245,9 +276,6 @@
     </div>
 
     <div class="project-card">
-	  <a href="https://pioneerecorp.com/" target="_blank" rel="noopener noreferrer">
-        <img src="https://raw.githubusercontent.com/maruthais/portfolio/main/Pioneerecorp.png" alt="Vinayaga Shutters Preview" />
-      </a>
       <h3>Pioneer Ecorp – Digital Marketing</h3>
       <p><strong>Requirement:</strong> Deliver SEO and digital marketing support to improve website traffic and ranking.</p>
       <p><strong>Scope:</strong> Page speed optimization, keyword research, on-page SEO, technical audit, and content enhancement.</p>
@@ -275,7 +303,7 @@
       <p><strong>Scope:</strong> Developed the entire site, added product catalogue, contact form and inquiry modules.</p>
       <p><strong>Technologies Used:</strong> WordPress, Elementor, PHP, MySQL</p>
       <a href="http://pioneerindia.co.in" target="_blank" class="live-button">Live Preview</a>
-      <a href="https://shaktiman.co" target="_blank" class="live-button" style="margin-left: 10px;">Live Preview</a>
+       
     </div>
 
     <div class="project-card">
@@ -312,9 +340,6 @@
     </div>
 
     <div class="project-card">
-	  <a href="https://ecomarvy.com/" target="_blank" rel="noopener noreferrer">
-        <img src="https://raw.githubusercontent.com/maruthais/portfolio/main/Ecomarvy.png" alt="Vinayaga Shutters Preview" />
-      </a>
       <h3>EcoMarvy – Natural Products E-commerce Website</h3>
       <p><strong>Requirement:</strong> Develop a user-friendly and secure e-commerce platform to showcase and sell EcoMarvy’s range of natural pest control and home cleaning products.</p>
       <p><strong>Scope:</strong> Custom WooCommerce setup with multiple payment gateway integrations, product catalog management, user-friendly UI/UX design, order tracking, and SEO optimization for enhanced online visibility.</p>
@@ -323,6 +348,7 @@
     </div>
 
   </section>
+
 
   <section>
     <h2>Contact</h2>
